@@ -14,7 +14,7 @@ pub struct ModulatorValueProvider<'a> {
 }
 
 impl<'a> ModulatorValueProvider<'a> {
-	pub(crate) fn new(modulators: &'a Arena<Box<dyn Modulator>>) -> Self {
+	pub fn new(modulators: &'a Arena<Box<dyn Modulator>>) -> Self {
 		Self {
 			kind: ModulatorValueProviderKind::Normal { modulators },
 		}

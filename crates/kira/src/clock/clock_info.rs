@@ -30,7 +30,7 @@ pub struct ClockInfoProvider<'a> {
 }
 
 impl<'a> ClockInfoProvider<'a> {
-	pub(crate) fn new(clocks: &'a Clocks) -> Self {
+	pub fn new(clocks: &'a Clocks) -> Self {
 		Self {
 			kind: ClockInfoProviderKind::Normal { clocks },
 		}
